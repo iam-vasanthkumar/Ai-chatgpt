@@ -61,7 +61,7 @@ pipeline{
                 sh "docker rm chatbot | true"
              }
         }
-        stage('Deploy to container'){
+        stage('Deploy to  container'){
             steps{
                 sh 'docker run -d --name chatbot -p 7000:3000 vasanthkumarg0303/chatbot:latest'
             }
